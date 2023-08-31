@@ -1,0 +1,45 @@
+﻿<Window x:Class="MoverFichasEjemplo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoverFichasEjemplo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="btnLanzar" Content="Lanzar Dado" Click="btnLanzar_Click" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+        <TextBlock x:Name="txtResultado" Grid.Row="1" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+        <UniformGrid Grid.Row="2" Rows="1" Columns="6">
+            <Button x:Name="casilla1" Content="1" Click="Casilla_Click"/>
+            <Button x:Name="casilla2" Content="2" Click="Casilla_Click"/>
+            <Button x:Name="casilla3" Content="3" Click="Casilla_Click"/>
+            <Button x:Name="casilla4" Content="4" Click="Casilla_Click"/>
+            <Button x:Name="casilla5" Content="5" Click="Casilla_Click"/>
+            <Button x:Name="casilla6" Content="6" Click="Casilla_Click"/>
+        </UniformGrid>
+        <UniformGrid Grid.Row="3" Rows="1" Columns="6">
+            <Button x:Name="casilla7" Content="7" Click="Casilla_Click"/>
+            <Button x:Name="casilla8" Content="8" Click="Casilla_Click"/>
+            <Button x:Name="casilla9" Content="9" Click="Casilla_Click"/>
+            <Button x:Name="casilla10" Content="10" Click="Casilla_Click"/>
+            <Button x:Name="casilla11" Content="11" Click="Casilla_Click"/>
+            <Button x:Name="casilla12" Content="12" Click="Casilla_Click"/>
+        </UniformGrid>
+        <UniformGrid Grid.Row="4" Rows="1" Columns="6">
+            <Button x:Name="casilla13" Content="13" Click="Casilla_Click"/>
+            <Button x:Name="casilla14" Content="14" Click="Casilla_Click"/>
+            <Button x:Name="casilla15" Content="15" Click="Casilla_Click"/>
+            <Button x:Name="casilla16" Content="16" Click="Casilla_Click"/>
+            <Button x:Name="casilla17" Content="17" Click="Casilla_Click"/>
+            <Button x:Name="casilla18" Content="18" Click="Casilla_Click"/>
+        </UniformGrid>
+    </Grid>
+</Window>
